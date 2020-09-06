@@ -1,0 +1,56 @@
+<!--
+    Instalaçoes:
+    1 -  Lauchbase Thema
+    2 -  Live Server
+
+    alt + z = o vscode ajusta o codigo para o tamanho da tela atual;
+-->
+
+    <!-- Conceito de Localização de arquivos dentro do HTML
+    root -> e a raiz das pastas 
+    quando usamos o live server sempre que usar /styles.css ele vai buscar o css no root ja que o arquivo css nao estava dentro da mesma pasta que o index.html-->
+
+
+<!-- CSS Cascading StyleSheet  
+
+    A cascata no CSS é o que vai levar a ordem de precedencia, o selector o mais forte é o # depois o de .class depois a tag em si tipo h1.
+    o que esta recebendo a cascata mais forte.
+
+    Comenatarios no css e /**/ 
+
+    podemos criar uma classe como class="red" e acessar essa clase dentor da tag style { . ponto e o onme da classe .red { color: red; }} 
+    atributo de class e de id são atriibutos globais o que isso quer dizer? que os filhos receberam essa class, se não tiver outra cor atribuida.
+    ID e acesso pelo # é o nome do id exemplo <h1 id="page"> </h1> no css acesso assim #page { color: red; } ele PRECISAM ser unicos não posso colocar dois em no html-->
+
+<!-- ctrl + shit + P = pesuisar por (shortcuts para ver os atalhos) -->
+<!-- Shift+Alt+A Toggle block comment -->
+
+<!--com Emmet podemos criar as tags html de forma rapida e pratica com ! e aperta ENTER-->
+<!--se voce passar o mause em cima do atributo voce consegue ler documentação -->
+<!--cache são dados que o navegador guardar para 
+que toda vez que a gente for acessar a pagina ele ja tiver isso pronto --> 
+
+<!DOCTYPE html>  <!-- aqui serve para dizer que o navegador vai usar o html5;--> 
+<html lang="pt_br"> <!-- lang é um atributo por isso ele está dentro tag html-->
+<!--Comentarios em html são vistos no inspecionar elemento;-->
+<head> <!--isso e uma tag html;-->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | Sua plataforma de estudos online</title> <!--Titulo na ABA do navegador-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="page-landing">
+
+    <div><!-- a Div e uma tag que serve para auxlilar na estilização da pagina pois e uma caixa -->
+        <h1>Proffy</h1> 
+
+        <p>Sua plataforma de estudos online</p> <!--para criar um paragrafo e quebrar uma linha-->
+        
+        <img src="" alt=""> <!-- tag para colocar uma imagem no site o src="" e o caminho da imagem  
+                                 o alt e uma alternativa ao src que não existe, e acessibilidade-->
+        <!--todo coutedudo da pagina vem na tag body;-->
+        <button>Estudar</button>
+        <button>Dar Aulas</button>
+    </div>
+</body>
+</html>
