@@ -58,7 +58,7 @@ textarea {
 #container {
     width: 90vw; /* estou dizendo que minha largura sera de 90vh, quebra a largura em 100vh mas so pega 90vh o que vai fazer com que tenha uma sobre de 10vh */
     max-width: 700px; /* aqui estou dizendo que se aumentarem a tela, o maximo que minha caixa vai ter e 700px se ela for menor que isso ela vai ficar usando o width 90vw;  */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     
 }
 
