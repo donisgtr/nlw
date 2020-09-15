@@ -1,7 +1,3 @@
-:root {
-    font-size: 40%; /* modificar as medidas rem */
-}
-
 #page-landing {
     background: var(--color-primary);
 }
@@ -94,6 +90,12 @@
     margin-left: 0.8rem;
 }
 
+@media (max-width: 699px) {
+    :root {
+        font-size: 40%; /* modificar as medidas rem */
+    }
+}
+
 /* media e uma regra css quando ele cumprir uma regra */
 /* min-width se a largura mimina é de 1100px? se passar de 1100px de largura ela precisa ter no minino 1100px de largura para aplicar o que esta abaixo */
 @media(min-width: 1100px){
@@ -103,18 +105,35 @@
         grid-template-columns: 2fr 1fr 2fr; /* 3 colunas */
         grid-template-rows: 350px 1fr; /* primeira linha sera de 350px e a segunda sera flexivel de 1fr */
         grid-template-areas: "proffy image image " "button button texting";
+        gap: 60px;
     }
 
     .logo-container {
         grid-area: proffy;
+        text-align: initial;
+        align-self: center;
+        margin: 0;
     }
+
+    
+    .logo-container img {
+        height: 126px;
+    }
+
     .hero-image {
         grid-area: image;
+        height: 350px;        
     }
     .buttons-container {
         grid-area: button;
+        justify-content: flex-start;
+        margin: 0;
+
     }
+
     .total-connections {
         grid-area: texting;
+        justify-self: end;
+        font-size: 1.2rem;
     }
 }
