@@ -78,16 +78,13 @@
 
 .total-connections {
     font-size: 1.8rem;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .total-connections img {
-    margin-left: 0.8rem;
+    margin-left: 0.8rem;   
 }
 
 @media (max-width: 699px) {
@@ -104,8 +101,11 @@
         display: grid;
         grid-template-columns: 2fr 1fr 2fr; /* 3 colunas */
         grid-template-rows: 350px 1fr; /* primeira linha sera de 350px e a segunda sera flexivel de 1fr */
-        grid-template-areas: "proffy image image " "button button texting";
-        gap: 60px;
+        grid-template-areas: 
+        "proffy image image"
+        "button button texting";
+        column-gap: 87px;
+        row-gap: 86px;
     }
 
     .logo-container {
@@ -124,6 +124,7 @@
         grid-area: image;
         height: 350px;        
     }
+
     .buttons-container {
         grid-area: button;
         justify-content: flex-start;
