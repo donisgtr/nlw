@@ -1,0 +1,140 @@
+#page-study #container {
+    width: 100vw; /* vai ocupar toda a largura visivel na */
+    height: 100vh; /* que tambem vai ocupar toda o espaço visivel na tela é quando eu faço isso ele coloca todos os elementos no topo */
+} 
+
+/* prestar bastante atenção no selector css errei colocando o # cerquilha em vez de ponto. */
+.page-header {
+    background-color: var(--color-primary);
+        /* o que o display flex faz mesmo? coloca todos os conteudos dentro um ao lado do outro. */
+    display: flex; 
+    flex-direction: column;
+}
+
+
+.page-header .top-bar-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem; /* em cima e em baixo 1.6rem e nas laterias 0  */
+}
+
+.page-header .top-bar-container a {
+    height: 3.2rem;
+    transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container a:hover {
+    opacity: 0.6;
+}
+
+.page-header .top-bar-container img {
+    height: 1.6rem;
+}
+
+.page-header .header-content {
+    width: 90%;
+    margin: 3.2rem auto;
+}
+
+.page-header .header-content strong {
+    font: 700 3.6rem Archivo;
+    line-height: 4.2rem; /* espaço de altura entre as linhas */
+    color: var(--color-title-in-primary);
+
+}
+ 
+#search-teachers {
+    margin-top: 3.2rem;
+}
+
+#search-teachers label {
+    color: var(--color-title-in-primary);
+}
+
+#search-teachers .select-block {
+    margin-bottom: 1.4rem;
+}
+
+#search-teachers button {
+    width: 100%;
+    height: 5.5rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: .8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    margin-top: 3.2rem;    
+}
+
+#search-teachers button:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+.select-block label,
+.input-block label {
+    font-size: 1.4rem;
+    color: var(--color-text-complement);
+}
+
+.input-block input,
+.select-block select {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+    outline: 0;
+    padding: 0 1.6rem;
+    font: 1.6rem Archivo;
+}
+
+.input-block {
+    position: relative;
+}
+ 
+.input-block:focus-within::after {
+    content: ""; /* é obrogatorio o content */
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background: var(--color-primary-light);
+    position: absolute;
+    left: 1.6rem;
+    bottom: 0px;
+    /* O pai desse after é o input-block acima com relative.
+    para que ele aparece apenas dentro do body; */
+}
+
+#page-study main {
+    margin: 3.2rem auto;kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk,~]///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    width: 90%;
+}
+
+
+.teacher-item {
+    background-color: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: .8rem;
+    margin-top: 2.4rem;    
+} 
+
+.teacher-item header {
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.teacher-item header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+
+}
